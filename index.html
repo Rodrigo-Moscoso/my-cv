@@ -5,67 +5,296 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoja de Vida de Rodrigo Moscoso Dotzauer</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
   </head>
+  
+  
   <body style="margin-left: 50px">
-        <h1>Hoja de Vida</h1>
-            <h2>Información general</h2>
-                <h3>Rodrigo Moscoso Dotzauer</h3>
-                <h4><a href="mailto:rodrigo.moscoso@gmail.com">Envía un correo</a></h4>
-                <h4>Télfono: (+591) 710 598 38</h4>
-                <h4>Santa Cruz de la Sierra - Bolivia</h4>
-                <h4><a href="https://github.com/Rodrigo-Moscoso">GitHub</a></h4>
-                <h4><a href="https://www.linkedin.com/in/rodrigo-moscoso-dotzauer/">Linkedin</a></h4>
-                </br>
-            <h2>Experiencia</h2>
-                <ul>
-                    <li><strong>Observatorio Aragonés de la Sociedad de la Información (OASI)</strong> - Técnico en Gestión de Datos</li>
-                    <li><strong>Universidad de Zaragoza</strong> - Investigador en el Proyecto: “Legal Technical Framework for Privacy Preserving Data Management -ENDORSE-“</li>
-                    <li><strong>Cámara de Comercio e Industria de Zaragoza</strong> - Consultor TIC del SATI</li>
-                    <li><strong>Cámara de Industria, Comercio, Servicio y Turismo de Santa Cruz de la Sierra</strong> - Ejecutivo Comercial de GS1 Bolivia</li>
-                </ul>
-                </br>
-            <h2>Habilidades técnicas y tecnológicas</h2>
-                <table style="border-color: darkkhaki; border-style: groove; padding: 10px;">
-                    <tr>
-                        <td style="padding: 10px">JavaScript</td>
-                        <td style="padding: 10px">HTML</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">CSS</td>
-                        <td style="padding: 10px">React</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">Firebase</td>
-                        <td style="padding: 10px">Y mas</td>
-                    </tr>
-                </table>
-                </br>
-            <h2>Intereses</h2>
-                <table style="border-color: darkkhaki; border-style: groove; padding: 10px;">
-                    <tr>
-                        <td style="padding: 10px">Scrum</td>
-                        <td style="padding: 10px">Aplicaciones móviles</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 10px">SEO</td>
-                        <td style="padding: 10px">Usabilidad/User Experience</td>
-                    </tr>
-                </table>      
-                </br>
-            <h2>Contacto</h2>
-                <form action="getform.php" method="get">
-                    <label>
-                        Correo Electrónico: </br>
-                        <input type="text" value="Escribe tu correo">
-                    </label>
-                    </br></br>
-                    <label style="padding-bottom: 50px;">
-                        Mensaje </br>
-                        <textarea name="textarea" rows="10" cols="50">Deja tu mensaje</textarea>
-                    </label>
-                    </br></br>
-                    <input type="submit" value="Contactar" style="margin-left: 150px"></br></br>
-                </form>
-                </br>
+        <!--Seccion General-->
+        <section class="general">
+
+
+            <!--Seccion Izquierda: Foto, Contacto, Habilidades e Intereses, Hobies-->
+            <section class="izquierda">
+                <div>
+                    <img id="fotoCV" src="imagenes/Foto CV Rodrigo.jfif">
+                </div>
+
+                <div>
+                    <h3>Contacto</h3>
+                    
+                    <div class="contenedor-contacto">
+                        <img class="iconos-contacto" src="imagenes/sobre.png">
+                        <a href="mailto:rodrigo.moscoso@gmail.com">Envía un correo</a>
+                    </div>
+                    
+                    <div class="contenedor-contacto">
+                        <img class="iconos-contacto" src="imagenes/llamada-telefonica.png">
+                        <p class="parrafo-contacto">(+591) 710 598 38</p>
+                    </div>
+                    
+                    <div class="contenedor-contacto">
+                        <img class="iconos-contacto" src="imagenes/marcador.png">
+                        <p class="parrafo-contacto">Santa Cruz</p>
+                    </div>
+
+                    <div class="contenedor-contacto">
+                        <img class="iconos-contacto" src="imagenes/globo.png">
+                        <a href="https://github.com/Rodrigo-Moscoso">GitHub</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Habilidades</h3>
+                    
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">JavaScript</label>
+                        <progress id="file" max="100" value="80"> 80% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">HTML</label>
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">CSS</label>
+                        <progress id="file" max="100" value="90"> 90% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">React</label>
+                        <progress id="file" max="100" value="50"> 50% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">Firebase</label>
+                        <progress id="file" max="100" value="20"> 20% </progress>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Intereses</h3>
+                    
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">Scrum</label>
+                        <progress id="file" max="100" value="80"> 80% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">Aplicaciones Móvil</label>
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">SEO</label>
+                        <progress id="file" max="100" value="90"> 90% </progress>
+                    </div>
+
+                    <div class="contenedor-habilidades-intereses">
+                        <label for="file" class="parrafo-habilides-intereses">Usabilidad</label>
+                        <progress id="file" max="100" value="50"> 50% </progress>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Hobies</h3>
+
+                    <div class="contenedor-hobies">
+                        <img class="iconos-hobies" src="imagenes/mando.png">
+                        <img class="iconos-hobies" src="imagenes/mundo.png">
+                        <img class="iconos-hobies" src="imagenes/taza-caliente-alt.png">
+                        <img class="iconos-hobies" src="imagenes/almuerzo-cohete.png">
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+
+            <!--Seccion Derecha: Titulo, Información Personal y Experiencia-->
+            <section class="derecha">
+                <div>
+                    <h1><span>Rodrigo</span></br>Moscoso Dotzauer</h1>
+                </div>
+
+                <div class="contenedor-subtitulo">
+                    <h2>Información Personal</h2>
+                </div>
+
+                <div>
+                    <p class="parrafo-info-personal">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
+                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos 
+                        especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de 
+                        relleno en documentos electrónicos, quedando esencialmente igual al original. 
+                        Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales 
+                        contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, 
+                        como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                </div>
+            
+
+                <div class="contenedor-subtitulo">
+                    <h2>Experiencia</h2>
+                </div>
+
+                <div>
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2011-2013
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Observatorio Aragonés de la Sociedad de la Información (OASI)
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Técnico en Gestión de Datos
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2011-2012
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Universidad de Zaragoza
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Investigador en el Proyecto: Legal Technical Framework for Privacy Preserving Data Management -ENDORSE-
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2009-2010
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Cámara de Comercio e Industria de Zaragoza
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Consultor TIC del SATI
+                                </p>
+                            </div>
+                        </div>
+                    </div>                   
+
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2001-2006
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Cámara de Industria, Comercio, Servicio y Turismo de Santa Cruz de la Sierra
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Ejecutivo Comercial de GS1 Bolivia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="contenedor-subtitulo">
+                    <h2>Formación</h2>
+                </div>
+
+                <div>
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2007-2008
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Master en Administración de Empresas Electrónicas
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Universidad de Zaragoza
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                2006-2007
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Master en Logística
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Universidad de Zaragoza
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-experiencia-habilidades">
+                        <div class="fecha">
+                            <p>
+                                1994-1999
+                            </p>
+                        </div>
+                        <div>
+                            <div class="empresa-institucion">
+                                <h5>
+                                    Ingeniería Industrial y de Sistemas
+                                </h5>
+                            </div>
+                            <div class="cargo">
+                                <p>
+                                    Universidad Privada de Santa Cruz de la Sierra
+                                </p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+                
+
+
+            </section>
+        </section>
   </body>
 </html>
