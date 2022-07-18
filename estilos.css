@@ -96,7 +96,6 @@ progress {
 .contenedor-habilidades-intereses {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 20px;
 }
 
 .parrafo-habilides-intereses {
@@ -109,7 +108,6 @@ progress {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
-  margin-bottom: 50px;
 }
 
 .iconos-contacto {
